@@ -8,9 +8,7 @@ app.use(basicAuth({
     users: {
         'john': 'superSecret',
         'elise': '12345678'
-    },
-    challenge: true,
-    realm: 'BasicHTTPAuth'
+    }
 }))
 
 app.use(express.json())
@@ -66,14 +64,6 @@ const books = [
 /**
  * Demo Data END
  */
-
-/**
- * CORS
- */
-app.use(function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', req.header('origin') );
-    next();
-});
 
 /**
  * Books CRUD
