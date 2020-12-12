@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Client HTTP Basic</title>
+    </head>
+    <body>
+        <h1>Client HTTP Basic</h1>
+        <p>Ouvrez la console de votre navigateur pour voir la liste des livres</p>
+        <script>
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://fathomless-everglades-21624.herokuapp.com/books', false);
+            xhr.withCredentials = true;
+            xhr.setRequestHeader("Authorization", 'Basic ' + btoa('john:superSecret'));
+            xhr.onload = function () {
+                console.log(xhr.responseText);
+            };
+            xhr.send();
+        </script>
+    </body>
+</html>

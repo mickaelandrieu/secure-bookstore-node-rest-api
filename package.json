@@ -1,0 +1,17 @@
+{
+  "name": "secure-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-basic-auth": "^1.2.0",
+    "moment": "^2.29.1"
+  }
+}
