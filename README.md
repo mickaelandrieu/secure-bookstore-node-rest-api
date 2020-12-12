@@ -8,6 +8,12 @@ cd secure-bookstore-node-rest-api
 npm i
 ```
 
+## Security
+
+HTTP Basic Auth has been enabled on this app, with 2 allowed users :
+* ``john:superSecret``
+* ``elise:12345678``
+
 ## Endpoints
 
 ### Books
